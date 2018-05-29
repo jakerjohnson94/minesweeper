@@ -153,6 +153,7 @@ const board = {
   },
 
   addMouseEventListeners: function () {
+    document.getElementById('imgWrap').addEventListener('click', game.handleLeftMouseClick)
     board.buttons.forEach((row) =>
       row.forEach((btn) => {
       btn.addEventListener('click', game.handleLeftMouseClick);
