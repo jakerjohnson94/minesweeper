@@ -1,0 +1,133 @@
+:root{
+ --button-background-gray: rgb(240, 239, 239);
+}
+body, html{
+  font-family: 'Tajawal', sans-serif;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+div {
+  text-align: center;
+}
+h1{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1em;
+}
+#headerTitleWrap{
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+}
+#headerBarWrap{
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  justify-content: space-around;
+}
+header h1{
+  align-self: flex-start;
+}
+button {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: var(--button-background-gray);
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.cell {
+  width: 35px;
+  height: 35px;
+  font-size: 1em;
+  border: .1em solid rgb(206, 204, 204);
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell-type-0 {
+  color: transparent;
+
+}
+
+.cell-type-1 {
+  color: red;
+}
+
+.cell-type-2 {
+  color: blue;
+}
+
+.cell-type-3 {
+  color: green;
+}
+
+.cell-type-4 {
+  color: blueviolet;
+}
+
+.cell-type-5 {
+  color: orange;
+}
+
+.cell-type-6 {
+  color: pink;
+}
+
+.cell-type-X {
+  color: transparent;
+  background-image: url(pics/kanyeSurprised.png);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.rightClicked {
+  z-index: 2;
+  background: url(pics/coolKanye.png);
+  background-color: var(--button-background-gray);
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#imgWrap{
+  width: 2em;
+  height: 2.5em;
+  background-image: url(pics/happyKanye.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.row {
+  display: flex;
+  position: relative;
+  margin: 0;
+}
+
+#boardWrapper {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* #output {
+  position: absolute;
+  background-color: rgba(240, 239, 239, 0.904);
+  z-index: 1;
+  top: -10px;
+  width: 500px;
+  height: 200px;
+  visibility: hidden;
+} */
