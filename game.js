@@ -9,7 +9,6 @@ const game = {
   resetButtonImage: document.getElementById('imgWrap'),
 
   handleLeftMouseClick: function (event) {
-    if (event.target.id === 'imgWrap') location.reload()
     game.totalClickCounter++;
     if (game.totalClickCounter === 1) {
       game.handleTimer();
@@ -79,6 +78,8 @@ handleFlagCount: function(currentButton){
      
     }
   },
-
+  reloadPage: function(){
+    location.reload()
+  }
 
 }
